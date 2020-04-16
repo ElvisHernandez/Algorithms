@@ -4,7 +4,6 @@ void bubble_sort(int nums[], int nums_length);
 
 int main(void) {
    int nums[] = {7,-1,3,0,9,-33,-5}; 
-   int target = -11;
    bubble_sort(nums,7);
     for (int i = 0; i < 7; i++) {
         printf("Array element %i: %i\n", i+1, nums[i]);
