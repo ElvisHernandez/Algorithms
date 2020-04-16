@@ -21,7 +21,7 @@ int binary_search(int nums[],int nums_length, int target){
             start = mid + 1;
         }
          mid = (start+end)/2;
-    }
+    
     return mid;
 }
 
