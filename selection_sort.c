@@ -12,12 +12,14 @@ int main(void) {
 
 void selection_sort(int nums[], int nums_length) {
     for (int i = 0; i < nums_length; i++) {
-        int min = nums[i];
+        int min_index = i;
         for (int j = i; j < nums_length; j++) {
-            if (nums[j] < min ) {
-                min = nums[j];
+            if (nums[j] < nums[min_index] ) {
+                min_index = j;
             }
         }
-        nums[i] = min;
+        int current_value = nums[i];
+        nums[i] = nums[min_index];
+        nums[min_index] = current_value; 
     }
 } 
